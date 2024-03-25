@@ -48,6 +48,7 @@ function startGame(count) {
 
   switch (count) {
     case 2:
+<<<<<<< HEAD
       // listItems.classList.add('row-cols-2');
       container.style.maxWidth = '250px';
       break;
@@ -65,6 +66,25 @@ function startGame(count) {
       break;
     case 10:
       // listItems.classList.add('row-cols-10');
+=======
+      listItems.classList.add('row-cols-2');
+      container.style.maxWidth = '250px';
+      break;
+    case 4:
+      listItems.classList.add('row-cols-4');
+      container.style.maxWidth = '500px';
+      break;
+    case 6:
+      listItems.classList.add('row-cols-6');
+      container.style.maxWidth = '700px';
+      break;
+    case 8:
+      listItems.classList.add('row-cols-8');
+      container.style.maxWidth = '900px';
+      break;
+    case 10:
+      listItems.classList.add('row-cols-10');
+>>>>>>> 7729103992c47ea48da6650c185c2d1c536d9182
       container.style.maxWidth = '1100px';
       break;
   }
