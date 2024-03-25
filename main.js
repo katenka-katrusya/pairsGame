@@ -8,7 +8,7 @@ let interval;
 
 function createNumbersArray(count) {
   let arrPairedNumbers = [];
-  for (let i = 1; i <= count * count / 2; i++) {
+  for (let i = 1; i <= count * count; i++) {
     arrPairedNumbers.push(i, i);
   }
   return arrPairedNumbers;
