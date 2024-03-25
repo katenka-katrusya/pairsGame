@@ -8,7 +8,7 @@ let interval;
 
 function createNumbersArray(count) {
   let arrPairedNumbers = [];
-  for (let i = 1; i <= count * count; i++) {
+  for (let i = 1; i <= count * count / 2; i++) {
     arrPairedNumbers.push(i, i);
   }
   return arrPairedNumbers;
@@ -48,24 +48,24 @@ function startGame(count) {
 
   switch (count) {
     case 2:
-      listItems.classList.add('row-cols-2');
-      // container.style.maxWidth = '250px';
+      // listItems.classList.add('row-cols-2');
+      container.style.maxWidth = '250px';
       break;
     case 4:
-      listItems.classList.add('row-cols-4');
-      // container.style.maxWidth = '500px';
+      // listItems.classList.add('row-cols-4');
+      container.style.maxWidth = '500px';
       break;
     case 6:
-      listItems.classList.add('row-cols-6');
-      // container.style.maxWidth = '700px';
+      // listItems.classList.add('row-cols-6');
+      container.style.maxWidth = '700px';
       break;
     case 8:
-      listItems.classList.add('row-cols-8');
-      // container.style.maxWidth = '900px';
+      // listItems.classList.add('row-cols-8');
+      container.style.maxWidth = '900px';
       break;
     case 10:
-      listItems.classList.add('row-cols-10');
-      // container.style.maxWidth = '1100px';
+      // listItems.classList.add('row-cols-10');
+      container.style.maxWidth = '1100px';
       break;
   }
 
@@ -136,7 +136,7 @@ function StartTimer(timer) {
   interval = setInterval(() => {
     seconds > 0 ? seconds-- : clearInterval(interval);
     timer.textContent = `00:00:${seconds.toString().padStart(2, '0')}`; // добавляем 0 в начале, если длина строки < 2
-    console.log('timer.textContent:', timer.textContent);
+
     if (timer.textContent === '00:00:00') {
       gameOver(timer);
     }
