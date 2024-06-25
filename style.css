@@ -7,9 +7,6 @@
 }
 
 .card {
-  /*width: 100px; !* Установите ширину карточки по вашему усмотрению *!*/
-  /*height: 100px; !* Установите высоту карточки по вашему усмотрению *!*/
-  /*margin: 10px;*/
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
